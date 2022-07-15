@@ -53,7 +53,7 @@ def plot_raw_data():
 	fig = go.Figure()
 	fig.add_trace(go.Scatter(x=data['Date'], y=data['Open'], name="stock_open"))
 	fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], name="stock_close"))
-	fig.layout.update(title_text='Stock Open and Close Information', xaxis_rangeslider_visible=True)
+	fig.layout.update(title_text='Stock Price Open and Close Information', xaxis_rangeslider_visible=True)
 	st.plotly_chart(fig)
 	
 plot_raw_data()
