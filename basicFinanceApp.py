@@ -94,7 +94,7 @@ st.download_button('Download Institutional Stakeholders Data', csv1, file_name='
 ##SHow financials 
 quaterly_fin = ticker_pass.quarterly_financials
 st.subheader('Quaterly Financials')
-st.write(quaterly_fin.describe())
+st.write(quaterly_fin)
 
 csv2 = quaterly_fin.to_csv(index=False)
 
@@ -107,7 +107,7 @@ st.download_button('Download Quaterly Financials Data', csv2, file_name='Quaterl
 st.subheader('Quaterly Balance Sheet')
 balancesheet_quater = ticker_pass.quarterly_balance_sheet
 
-st.write(balancesheet_quater.describe())
+st.write(balancesheet_quater)
 
 csv3 = balancesheet_quater.to_csv(index=False)
 
@@ -117,7 +117,7 @@ st.download_button('Download Quaterly Balance Sheet Data', csv3, file_name='Quat
 
 st.subheader('Quaterly CashFlow')
 quatercash = ticker_pass.quarterly_cashflow
-st.write(quatercash.describe())
+st.write(quatercash)
 
 csv4 = quatercash.to_csv(index=False)
 
