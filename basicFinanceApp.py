@@ -163,9 +163,6 @@ st.subheader('Options')
 options_tick = ticker_pass.options
 st.write(options_tick)
 
-csv9 = options_tick.to_csv(index=False)
-
-st.download_button('Download Options', csv9, file_name='options.csv')
 
 
 ##Non Fin Info
