@@ -154,14 +154,7 @@ csv7 = divi.to_csv(index=False)
 
 st.download_button('Download Dividend and Stock Splits Data', csv7, file_name='StockSplit.csv')
 
-# show earning dates
-st.subheader('Earning Dates')
-earning_dates = ticker_pass.earnings_dates
-st.write(earning_dates)
 
-csv8 = earning_dates.to_csv(index=False)
-
-st.download_button('Download Earning Dates', csv8, file_name='Earning_dates.csv')
 
 
 # show options expirations
