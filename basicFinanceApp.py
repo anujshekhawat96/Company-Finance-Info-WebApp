@@ -157,12 +157,6 @@ st.download_button('Download Dividend and Stock Splits Data', csv7, file_name='S
 
 
 
-# show options expirations
-
-st.subheader('Options')
-options_tick = ticker_pass.options
-st.write(options_tick)
-
 
 
 ##Non Fin Info
